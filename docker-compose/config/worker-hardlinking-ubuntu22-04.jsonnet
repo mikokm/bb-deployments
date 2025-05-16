@@ -24,14 +24,14 @@ local common = import 'common.libsonnet';
       platform: {
         properties: [
           { name: 'OSFamily', value: 'linux' },
-          { name: 'container-image', value: 'docker://ghcr.io/catthehacker/ubuntu:act-22.04@sha256:5f9c35c25db1d51a8ddaae5c0ba8d3c163c5e9a4a6cc97acd409ac7eae239448' },
+	   { name: 'container-image', value: 'docker://gcr.io/chops-public-images-prod/rbe/siso-chromium/linux@sha256:26de99218a1a8b527d4840490bcbf1690ee0b55c84316300b60776e6b3a03fe1' },
         ],
       },
       workerId: {
-        datacenter: 'linkoping',
-        rack: '4',
-        slot: '15',
-        hostname: 'ubuntu-worker.example.com',
+        datacenter: 'local',
+        rack: '1',
+        slot: '1',
+        hostname: 'worker-hardlinking',
       },
     }],
   }],
